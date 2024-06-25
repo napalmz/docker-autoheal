@@ -41,7 +41,7 @@ docker_curl() {
   curl --max-time "${CURL_TIMEOUT}" --no-buffer -s \
   ${CA} ${CLIENT_KEY} ${CLIENT_CERT} \
   ${UNIX_SOCK} \
-  "$@"
+  $@
 }
 
 # shellcheck disable=2039
